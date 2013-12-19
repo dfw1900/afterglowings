@@ -1,0 +1,18 @@
+---
+title: afterglowings
+body_class: home
+---
+<% content_for :navigation do %>
+  <div class="hide">
+    <%= link_to '☮', '/home.html' %>
+    <%= link_to 'SOUNDS', '/sound.html', :relative => true %>
+    <%= link_to 'VISIONS', '/vision.html' %>
+    <%= link_to '?', '#' %>
+    <%= link_to 'SPACE', '/spaces.html', :relative => true %>
+    <%= link_to 'TIME', '/times.html', :relative => true %>
+  </div>
+<% end %>
+
+<div id="home_gif_wrapper">
+  <%= image_tag 'home.gif', id: "home_gif" %>
+</div>

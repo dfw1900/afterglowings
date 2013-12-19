@@ -1,0 +1,43 @@
+---
+title: afterglowings
+---
+  <% content_for :navigation do %>
+    <div class="visions-page">
+      <ul>
+        <li>
+          <%= link_to '☮', '/home.html' %>
+        </li>
+        <li>
+          <%= link_to 'SOUNDS', '/sounds.html', :relative => true %>
+        </li>
+        <li>
+          <%= link_to 'VISIONS', '/visions.html' %>
+        </li>
+        <li>
+          <%= link_to '?', '#' %>
+        </li>
+        <li>
+          <%= link_to 'SPACE', '/space.html', :relative => true %>
+        </li>
+        <li>
+          <%= link_to 'TIME', '/time.html', :relative => true %>
+        </li>
+      </ul>
+    </div>
+  <% end %>
+
+
+<div class="visions-page">
+  <div class="link-image-wrapper">
+    <h1>visions</h1>
+    <% link_to '/photos.html' do %>
+      <%= image_tag 'photo.jpg' %>
+    <% end %>
+    <% link_to "photos", '/photos.html' %>
+    <% link_to '/drawings.html' do %>
+      <%= image_tag 'poppy.jpeg' %>
+      <!-- <h2>drawings</h2> -->
+    <% end %>
+    <% link_to "drawings", '/drawings.html' %>
+  </div>
+</div>
